@@ -1,0 +1,22 @@
+// global.scss
+@layer tailwind-base,semi,tailwind-components,tailwind-utils;
+@layer tailwind-base{
+     @tailwind base;
+
+     /* 全局暗色模式样式 */
+     body {
+       color: var(--semi-color-text-0);
+       background-color: var(--semi-color-bg-0);
+     }
+
+     body[theme-mode="dark"] {
+       color: var(--semi-color-text-0);
+       background-color: var(--semi-color-bg-0);
+     }
+}
+@layer tailwind-components{
+     @tailwind components;
+}
+@layer tailwind-utils {
+     @tailwind utilities;
+}
