@@ -416,7 +416,7 @@ const CustomVideoPlayer = forwardRef<
           poster: poster,
           width: finalWidth,
           height: finalHeight,
-          autoplay: true,
+          autoplay: false,
           muted: true, // 静音自动播放以提高兼容性
           loop: true,
           playsinline: true,
